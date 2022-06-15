@@ -1,0 +1,2 @@
+2022-06-10T15:10:06,436 - PredictionTime.Milliseconds:89.08|#ModelName:mnist,Level:Model|#hostname:LAPTOP-87ODTB9T,requestID:63dfbca9-ac07-41d8-85db-2c8efb25a6a2,timestamp:1654848606
+2022-06-10T15:10:31,638 - PredictionTime.Milliseconds:2.0|#ModelName:mnist,Level:Model|#hostname:LAPTOP-87ODTB9T,requestID:2b74a87f-ad5b-4d47-87bc-0d4d5c094a9f,timestamp:1654848631

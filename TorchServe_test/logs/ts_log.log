@@ -1,0 +1,1432 @@
+2022-06-13T13:57:08,245 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T13:57:08,245 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T13:57:09,307 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T13:57:09,307 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T13:57:09,491 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220610151232321-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T13:57:09,491 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220610151232321-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T13:57:09,502 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220610151232321-startup.cfg",
+  "modelCount": 1,
+  "created": 1654848752321,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2022-06-13T13:57:09,502 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220610151232321-startup.cfg",
+  "modelCount": 1,
+  "created": 1654848752321,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2022-06-13T13:57:09,509 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220610151232321-startup.cfg
+2022-06-13T13:57:09,509 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220610151232321-startup.cfg
+2022-06-13T13:57:09,512 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220610151232321-startup.cfg validated successfully
+2022-06-13T13:57:09,512 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220610151232321-startup.cfg validated successfully
+2022-06-13T13:57:09,667 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model mnist
+2022-06-13T13:57:09,667 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model mnist
+2022-06-13T13:57:09,667 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T13:57:09,667 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T13:57:09,668 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T13:57:09,668 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T13:57:09,670 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model mnist loaded.
+2022-06-13T13:57:09,670 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model mnist loaded.
+2022-06-13T13:57:09,671 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: mnist, count: 1
+2022-06-13T13:57:09,671 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: mnist, count: 1
+2022-06-13T13:57:09,684 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe, C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000]
+2022-06-13T13:57:09,684 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe, C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000]
+2022-06-13T13:57:09,689 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T13:57:09,689 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T13:57:09,805 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T13:57:09,805 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T13:57:09,805 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T13:57:09,805 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T13:57:09,807 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T13:57:09,807 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T13:57:09,808 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T13:57:09,808 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T13:57:09,809 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T13:57:09,809 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T13:57:10,048 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2022-06-13T13:57:10,048 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2022-06-13T13:57:10,651 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-13T13:57:10,655 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]3864
+2022-06-13T13:57:10,655 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-13T13:57:10,656 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change null -> WORKER_STARTED
+2022-06-13T13:57:10,656 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.9.13
+2022-06-13T13:57:10,656 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change null -> WORKER_STARTED
+2022-06-13T13:57:10,666 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2022-06-13T13:57:10,666 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2022-06-13T13:57:10,721 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-13T13:57:10,724 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1655103430724
+2022-06-13T13:57:10,724 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1655103430724
+2022-06-13T13:57:10,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2022-06-13T13:57:11,084 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 334
+2022-06-13T13:57:11,084 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 334
+2022-06-13T13:57:11,085 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-06-13T13:57:11,085 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-06-13T13:57:11,085 [INFO ] W-9000-mnist_1.0 TS_METRICS - W-9000-mnist_1.0.ms:1405|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103431
+2022-06-13T13:57:11,088 [INFO ] W-9000-mnist_1.0 TS_METRICS - WorkerThreadTime.ms:30|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103431
+2022-06-13T13:57:12,522 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,523 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.22029876708984|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,525 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5475883483887|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,528 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,529 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,529 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,530 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,531 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5061.58984375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,532 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:11173.61328125|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:57:12,532 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:68.8|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103432
+2022-06-13T13:58:11,755 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:20.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,755 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2219772338867|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,760 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5459098815918|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,762 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,763 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,763 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,764 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,764 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5138.8671875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,765 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:11096.3359375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:58:11,766 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103491
+2022-06-13T13:59:11,751 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,751 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.21967697143555|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,757 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.548210144043|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,758 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,758 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,759 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,759 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,760 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5266.04296875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,761 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10969.16015625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T13:59:11,761 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.6|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103551
+2022-06-13T14:00:11,763 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:50.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,763 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2173500061035|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,767 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.550537109375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,770 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,770 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,771 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,772 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,772 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5285.015625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,773 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10950.1875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:00:11,774 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.4|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103611
+2022-06-13T14:03:22,773 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:03:22,773 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:03:23,790 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:03:23,790 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:03:23,929 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140038757-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:03:23,929 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140038757-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:03:23,937 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140038757-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1655103638757,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2022-06-13T14:03:23,937 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140038757-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1655103638757,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2022-06-13T14:03:23,944 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140038757-shutdown.cfg
+2022-06-13T14:03:23,944 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140038757-shutdown.cfg
+2022-06-13T14:03:23,945 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140038757-shutdown.cfg validated successfully
+2022-06-13T14:03:23,945 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140038757-shutdown.cfg validated successfully
+2022-06-13T14:03:24,091 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model mnist
+2022-06-13T14:03:24,091 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model mnist
+2022-06-13T14:03:24,092 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T14:03:24,092 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T14:03:24,093 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T14:03:24,093 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model mnist
+2022-06-13T14:03:24,097 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model mnist loaded.
+2022-06-13T14:03:24,097 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model mnist loaded.
+2022-06-13T14:03:24,097 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: mnist, count: 1
+2022-06-13T14:03:24,097 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: mnist, count: 1
+2022-06-13T14:03:24,106 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:03:24,106 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe, C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000]
+2022-06-13T14:03:24,106 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:03:24,106 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe, C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages\ts\model_service_worker.py, --sock-type, tcp, --port, 9000]
+2022-06-13T14:03:24,213 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:03:24,213 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:03:24,213 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:03:24,213 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:03:24,216 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:03:24,216 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:03:24,216 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:03:24,216 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:03:24,219 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:03:24,219 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:03:24,422 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2022-06-13T14:03:24,422 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2022-06-13T14:03:24,998 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-13T14:03:24,999 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]19036
+2022-06-13T14:03:25,001 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change null -> WORKER_STARTED
+2022-06-13T14:03:25,001 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-13T14:03:25,001 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change null -> WORKER_STARTED
+2022-06-13T14:03:25,004 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.9.13
+2022-06-13T14:03:25,013 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2022-06-13T14:03:25,013 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /127.0.0.1:9000
+2022-06-13T14:03:25,020 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-13T14:03:25,022 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1655103805022
+2022-06-13T14:03:25,022 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Flushing req. to backend at: 1655103805022
+2022-06-13T14:03:25,046 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2022-06-13T14:03:25,315 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 269
+2022-06-13T14:03:25,315 [INFO ] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 269
+2022-06-13T14:03:25,316 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-06-13T14:03:25,316 [DEBUG] W-9000-mnist_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-mnist_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2022-06-13T14:03:25,317 [INFO ] W-9000-mnist_1.0 TS_METRICS - W-9000-mnist_1.0.ms:1215|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,321 [INFO ] W-9000-mnist_1.0 TS_METRICS - WorkerThreadTime.ms:30|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,895 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,896 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.21628189086914|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,896 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5516052246094|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,897 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,898 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,898 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,899 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,900 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:4763.97265625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,900 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:11471.23046875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:03:25,901 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:70.7|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103805
+2022-06-13T14:04:07,762 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:04:07,762 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:04:08,793 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:04:08,793 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:04:08,934 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140324220-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:04:08,934 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140324220-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:04:08,941 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140324220-startup.cfg",
+  "modelCount": 1,
+  "created": 1655103804220,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2022-06-13T14:04:08,941 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140324220-startup.cfg",
+  "modelCount": 1,
+  "created": 1655103804220,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 1,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2022-06-13T14:04:08,949 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140324220-startup.cfg
+2022-06-13T14:04:08,949 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140324220-startup.cfg
+2022-06-13T14:04:08,950 [ERROR] main org.pytorch.serve.snapshot.SnapshotManager - Model archive file for model mnist, version 1.0 not found in model store
+2022-06-13T14:04:08,950 [ERROR] main org.pytorch.serve.snapshot.SnapshotManager - Model archive file for model mnist, version 1.0 not found in model store
+2022-06-13T14:04:11,025 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2022-06-13T14:04:11,025 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2022-06-13T14:04:48,176 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:04:48,176 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:04:49,196 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:04:49,196 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:04:49,337 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140411035-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: mnist,=,mnist.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:04:49,337 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140411035-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: mnist,=,mnist.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:04:49,346 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140411035-shutdown.cfg",
+  "modelCount": 0,
+  "created": 1655103851035,
+  "models": {}
+}
+2022-06-13T14:04:49,346 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140411035-shutdown.cfg",
+  "modelCount": 0,
+  "created": 1655103851035,
+  "models": {}
+}
+2022-06-13T14:04:49,352 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140411035-shutdown.cfg
+2022-06-13T14:04:49,352 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140411035-shutdown.cfg
+2022-06-13T14:04:49,354 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140411035-shutdown.cfg validated successfully
+2022-06-13T14:04:49,354 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140411035-shutdown.cfg validated successfully
+2022-06-13T14:04:49,354 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:04:49,354 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:04:49,356 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:04:49,356 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:04:49,452 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:04:49,452 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:04:49,452 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:04:49,452 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:04:49,458 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:04:49,458 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:04:49,458 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:04:49,458 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:04:49,459 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:04:49,459 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:04:51,115 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,116 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2172050476074|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,118 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5506820678711|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,122 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,122 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,123 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,124 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,125 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5351.22265625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,125 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10883.98046875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:04:51,128 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103891
+2022-06-13T14:05:10,558 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:05:10,558 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:05:11,587 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:05:11,587 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:05:11,730 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140449460-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:05:11,730 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140449460-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:05:11,737 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140449460-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103889460,
+  "models": {}
+}
+2022-06-13T14:05:11,737 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140449460-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103889460,
+  "models": {}
+}
+2022-06-13T14:05:11,745 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140449460-startup.cfg
+2022-06-13T14:05:11,745 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140449460-startup.cfg
+2022-06-13T14:05:11,746 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140449460-startup.cfg validated successfully
+2022-06-13T14:05:11,746 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140449460-startup.cfg validated successfully
+2022-06-13T14:05:11,746 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:05:11,746 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:05:11,749 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:05:11,749 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:05:11,843 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:05:11,843 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:05:11,843 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:05:11,843 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:05:11,848 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:05:11,848 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:05:11,849 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:05:11,849 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:05:11,851 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:05:11,851 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:05:13,474 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,475 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2168312072754|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,477 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5510559082031|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,481 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,481 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,482 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,483 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,483 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5354.44921875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,484 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10880.75390625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:05:13,485 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:67.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103913
+2022-06-13T14:06:00,115 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:06:00,115 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:06:01,135 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:06:01,135 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:06:01,276 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140511851-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: mnist,=,mnist.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:06:01,276 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140511851-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: mnist,=,mnist.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:06:01,283 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140511851-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103911851,
+  "models": {}
+}
+2022-06-13T14:06:01,283 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140511851-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103911851,
+  "models": {}
+}
+2022-06-13T14:06:01,290 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140511851-startup.cfg
+2022-06-13T14:06:01,290 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140511851-startup.cfg
+2022-06-13T14:06:01,291 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140511851-startup.cfg validated successfully
+2022-06-13T14:06:01,291 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140511851-startup.cfg validated successfully
+2022-06-13T14:06:01,291 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:06:01,291 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:06:01,293 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:06:01,293 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:06:01,387 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:06:01,387 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:06:01,387 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:06:01,387 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:06:01,392 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:06:01,392 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:06:01,393 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:06:01,393 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:06:01,394 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:06:01,394 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:06:03,036 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,037 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2174644470215|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,038 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.550422668457|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,039 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,043 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,043 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,044 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,044 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5372.14453125|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,046 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10863.05859375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:03,046 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.9|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103963
+2022-06-13T14:06:16,769 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:06:16,769 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:06:17,790 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:06:17,790 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:06:17,932 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140601395-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:06:17,932 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140601395-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:06:17,940 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140601395-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103961395,
+  "models": {}
+}
+2022-06-13T14:06:17,940 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140601395-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103961395,
+  "models": {}
+}
+2022-06-13T14:06:17,946 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140601395-startup.cfg
+2022-06-13T14:06:17,946 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140601395-startup.cfg
+2022-06-13T14:06:17,947 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140601395-startup.cfg validated successfully
+2022-06-13T14:06:17,947 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140601395-startup.cfg validated successfully
+2022-06-13T14:06:17,948 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:06:17,948 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:06:17,950 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:06:17,950 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:06:18,046 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:06:18,046 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:06:18,046 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:06:18,046 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:06:18,051 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:06:18,051 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:06:18,052 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:06:18,052 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:06:18,053 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:06:18,053 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:06:19,677 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:60.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,678 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2156867980957|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,680 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5522003173828|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,684 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,684 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,685 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,686 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,687 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5367.97265625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,687 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10867.23046875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:06:19,689 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:66.9|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655103979
+2022-06-13T14:13:11,363 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:13:11,363 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:13:12,384 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:13:12,384 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:13:12,521 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140618053-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: st=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:13:12,521 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613140618053-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: st=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:13:12,528 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140618053-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103978053,
+  "models": {}
+}
+2022-06-13T14:13:12,528 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613140618053-startup.cfg",
+  "modelCount": 0,
+  "created": 1655103978053,
+  "models": {}
+}
+2022-06-13T14:13:12,536 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140618053-startup.cfg
+2022-06-13T14:13:12,536 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613140618053-startup.cfg
+2022-06-13T14:13:12,537 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140618053-startup.cfg validated successfully
+2022-06-13T14:13:12,537 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613140618053-startup.cfg validated successfully
+2022-06-13T14:13:12,537 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:13:12,537 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:13:12,540 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:13:12,540 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:13:12,635 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:13:12,635 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:13:12,636 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:13:12,636 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:13:12,639 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:13:12,639 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:13:12,639 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:13:12,639 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:13:12,643 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:13:12,643 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:13:14,273 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,274 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2460708618164|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,276 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5218162536621|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,276 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,280 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,281 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,282 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,282 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6898.06640625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,283 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9337.13671875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:13:14,283 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:57.5|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104394
+2022-06-13T14:14:14,553 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,553 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2434883117676|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,559 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5243988037109|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,561 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,561 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,562 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,563 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,564 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6951.30078125|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,564 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9283.90234375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:14:14,565 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:57.2|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104454
+2022-06-13T14:15:14,600 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,600 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.2451362609863|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,607 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5227508544922|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,608 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,609 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,609 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,610 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,612 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6900.546875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,612 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9334.65625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:15:14,613 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:57.5|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104514
+2022-06-13T14:22:59,173 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:22:59,173 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:23:00,211 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:23:00,211 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:23:00,353 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613141312644-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: st=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:23:00,353 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613141312644-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: st=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:23:00,361 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613141312644-startup.cfg",
+  "modelCount": 0,
+  "created": 1655104392644,
+  "models": {}
+}
+2022-06-13T14:23:00,361 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613141312644-startup.cfg",
+  "modelCount": 0,
+  "created": 1655104392644,
+  "models": {}
+}
+2022-06-13T14:23:00,368 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613141312644-startup.cfg
+2022-06-13T14:23:00,368 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613141312644-startup.cfg
+2022-06-13T14:23:00,370 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613141312644-startup.cfg validated successfully
+2022-06-13T14:23:00,370 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613141312644-startup.cfg validated successfully
+2022-06-13T14:23:00,370 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:23:00,370 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:23:00,373 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:23:00,373 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:23:00,468 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:23:00,468 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:23:00,468 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:23:00,468 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:23:00,473 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:23:00,473 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:23:00,474 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:23:00,474 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:23:00,475 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:23:00,475 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:23:02,116 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,117 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.23738861083984|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,119 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5304985046387|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,120 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,123 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,124 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,125 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,125 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:6857.00390625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,126 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9378.19921875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:23:02,127 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:57.8|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655104982
+2022-06-13T14:34:33,106 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:34:33,106 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:34:34,135 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:34:34,135 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:34:34,277 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613142300476-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:34:34,277 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613142300476-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:34:34,286 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613142300476-startup.cfg",
+  "modelCount": 0,
+  "created": 1655104980476,
+  "models": {}
+}
+2022-06-13T14:34:34,286 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613142300476-startup.cfg",
+  "modelCount": 0,
+  "created": 1655104980476,
+  "models": {}
+}
+2022-06-13T14:34:34,292 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613142300476-startup.cfg
+2022-06-13T14:34:34,292 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613142300476-startup.cfg
+2022-06-13T14:34:34,294 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613142300476-startup.cfg validated successfully
+2022-06-13T14:34:34,294 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613142300476-startup.cfg validated successfully
+2022-06-13T14:34:34,294 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:34:34,294 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:34:34,296 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:34:34,296 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:34:34,393 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:34:34,393 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:34:34,394 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:34:34,394 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:34:34,399 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:34:34,399 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:34:34,399 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:34:34,399 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:34:34,400 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:34:34,400 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:34:36,022 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,023 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.232608795166|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,025 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5352783203125|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,029 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,029 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,030 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,031 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,031 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:7192.98828125|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,031 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9042.21484375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:34:36,032 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:55.7|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105676
+2022-06-13T14:37:56,302 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:37:56,302 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T14:37:57,333 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:37:57,333 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T14:37:57,483 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613143434401-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:37:57,483 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613143434401-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: sentencetransformer=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T14:37:57,490 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613143434401-startup.cfg",
+  "modelCount": 0,
+  "created": 1655105674401,
+  "models": {}
+}
+2022-06-13T14:37:57,490 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613143434401-startup.cfg",
+  "modelCount": 0,
+  "created": 1655105674401,
+  "models": {}
+}
+2022-06-13T14:37:57,496 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613143434401-startup.cfg
+2022-06-13T14:37:57,496 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613143434401-startup.cfg
+2022-06-13T14:37:57,498 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613143434401-startup.cfg validated successfully
+2022-06-13T14:37:57,498 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613143434401-startup.cfg validated successfully
+2022-06-13T14:37:57,498 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:37:57,498 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T14:37:57,500 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:37:57,500 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T14:37:57,595 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:37:57,595 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T14:37:57,595 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:37:57,595 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T14:37:57,597 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:37:57,597 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T14:37:57,597 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:37:57,597 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T14:37:57,598 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:37:57,598 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T14:37:59,240 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:0.0|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,241 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.23674392700195|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,243 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.5311431884766|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,247 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,248 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,248 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,249 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,250 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:7084.76171875|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,251 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:9150.44140625|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T14:37:59,251 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:56.4|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655105879
+2022-06-13T17:11:26,558 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T17:11:26,558 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2022-06-13T17:11:27,588 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T17:11:27,588 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2022-06-13T17:11:27,725 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613143757599-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: st=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T17:11:27,725 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.6.0
+TS Home: C:\Users\choun\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test
+Temp directory: C:\Users\choun\AppData\Local\Temp
+Number of GPUs: 1
+Number of CPUs: 12
+Max heap size: 4060 M
+Python executable: C:\Users\choun\AppData\Local\Programs\Python\Python39\python.exe
+Config file: logs\config\20220613143757599-startup.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Initial Models: st=st.mar
+Log dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Metrics dir: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\choun\Documents\Research files\Flask API\TorchServe_test\model_store
+Model config: N/A
+2022-06-13T17:11:27,733 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613143757599-startup.cfg",
+  "modelCount": 0,
+  "created": 1655105877599,
+  "models": {}
+}
+2022-06-13T17:11:27,733 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20220613143757599-startup.cfg",
+  "modelCount": 0,
+  "created": 1655105877599,
+  "models": {}
+}
+2022-06-13T17:11:27,739 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613143757599-startup.cfg
+2022-06-13T17:11:27,739 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20220613143757599-startup.cfg
+2022-06-13T17:11:27,741 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613143757599-startup.cfg validated successfully
+2022-06-13T17:11:27,741 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20220613143757599-startup.cfg validated successfully
+2022-06-13T17:11:27,742 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T17:11:27,742 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2022-06-13T17:11:27,744 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T17:11:27,744 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2022-06-13T17:11:27,839 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T17:11:27,839 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2022-06-13T17:11:27,840 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T17:11:27,840 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2022-06-13T17:11:27,845 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T17:11:27,845 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2022-06-13T17:11:27,845 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T17:11:27,845 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2022-06-13T17:11:27,846 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T17:11:27,846 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2022-06-13T17:11:29,552 [INFO ] pool-3-thread-1 TS_METRICS - CPUUtilization.Percent:33.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,553 [INFO ] pool-3-thread-1 TS_METRICS - DiskAvailable.Gigabytes:302.15661239624023|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,555 [INFO ] pool-3-thread-1 TS_METRICS - DiskUsage.Gigabytes:650.6112747192383|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,557 [INFO ] pool-3-thread-1 TS_METRICS - DiskUtilization.Percent:68.3|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,561 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUtilization.Percent:0.0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,561 [INFO ] pool-3-thread-1 TS_METRICS - GPUMemoryUsed.Megabytes:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,562 [INFO ] pool-3-thread-1 TS_METRICS - GPUUtilization.Percent:0|#Level:Host,device_id:0|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,563 [INFO ] pool-3-thread-1 TS_METRICS - MemoryAvailable.Megabytes:5644.99609375|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,563 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUsed.Megabytes:10590.20703125|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089
+2022-06-13T17:11:29,564 [INFO ] pool-3-thread-1 TS_METRICS - MemoryUtilization.Percent:65.2|#Level:Host|#hostname:LAPTOP-87ODTB9T,timestamp:1655115089

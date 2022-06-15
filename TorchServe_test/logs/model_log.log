@@ -1,0 +1,12 @@
+2022-06-13T13:57:10,651 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-13T13:57:10,655 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]3864
+2022-06-13T13:57:10,655 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-13T13:57:10,656 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.9.13
+2022-06-13T13:57:10,721 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-13T13:57:10,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2022-06-13T14:03:24,998 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-13T14:03:24,999 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]19036
+2022-06-13T14:03:25,001 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-13T14:03:25,004 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.9.13
+2022-06-13T14:03:25,020 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-13T14:03:25,046 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
